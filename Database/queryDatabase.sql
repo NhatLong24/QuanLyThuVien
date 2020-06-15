@@ -113,9 +113,6 @@ go
 create table CHITIETMUONTRA
 (
 	MaMuonTra char (15) REFERENCES MUONTRA (MaMuonTra),	
-	MaDonViSach char (15) REFERENCES SACH (MaDonViSach),
-	GhiChu ntext
-	primary key (MaMuonTra, MaDonViSach)
-		 
+	MaDonViSach char (15) REFERENCES SACH (MaDonViSach)
 )
 go
