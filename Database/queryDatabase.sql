@@ -1,5 +1,8 @@
-use TTN_QuanLyThuVien
+create database TTN_QuanLyThuVien
+go
 
+use TTN_QuanLyThuVien
+go
 create table TACGIA
 (
 	MaTacGia char (15),
@@ -109,11 +112,10 @@ go
 
 create table CHITIETMUONTRA
 (
-	MaMuonTra char (15),
-	MaDonViSach char (15),
-	constraint ctmt_MaMuonTra_fk FOREIGN KEY(MaMuonTra)
-		 REFERENCES MUONTRA (MaMuonTra),	
-	constraint ctmt_MaDonViSach_fk FOREIGN KEY(MaDonViSach)
-		 REFERENCES SACH (MaDonViSach)
+	MaMuonTra char (15) REFERENCES MUONTRA (MaMuonTra),	
+	MaDonViSach char (15) REFERENCES SACH (MaDonViSach),
+	GhiChu ntext
+	primary key (MaMuonTra, MaDonViSach)
+		 
 )
 go
