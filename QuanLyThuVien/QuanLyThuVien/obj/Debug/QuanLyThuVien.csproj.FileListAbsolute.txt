@@ -1,0 +1,15 @@
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.dll
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.dll
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.xml
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.xml
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormDocGia.resources
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CopyComplete
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+G:\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
