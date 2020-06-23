@@ -1,15 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="TTN_QuanLyThuVienModelStoreContainer" CdmEntityContainer="TTN_QuanLyThuVienEntities1">
-    <EntitySetMapping Name="CHITIETMUONTRAs">
-      <EntityTypeMapping TypeName="TTN_QuanLyThuVienModel.CHITIETMUONTRA">
-        <MappingFragment StoreEntitySet="CHITIETMUONTRA">
-          <ScalarProperty Name="MaMuonTra" ColumnName="MaMuonTra" />
-          <ScalarProperty Name="MaDonViSach" ColumnName="MaDonViSach" />
-          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
+  <EntityContainerMapping StorageEntityContainer="TTN_QuanLyThuVienModelStoreContainer" CdmEntityContainer="TTN_QuanLyThuVienEntities">
     <EntitySetMapping Name="DAUSACHes">
       <EntityTypeMapping TypeName="TTN_QuanLyThuVienModel.DAUSACH">
         <MappingFragment StoreEntitySet="DAUSACH">
@@ -59,6 +50,7 @@
         <MappingFragment StoreEntitySet="SACH">
           <ScalarProperty Name="MaDonViSach" ColumnName="MaDonViSach" />
           <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -101,5 +93,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <AssociationSetMapping Name="CHITIETMUONTRA" TypeName="TTN_QuanLyThuVienModel.CHITIETMUONTRA" StoreEntitySet="CHITIETMUONTRA">
+      <EndProperty Name="SACH">
+        <ScalarProperty Name="MaDonViSach" ColumnName="MaDonViSach" />
+      </EndProperty>
+      <EndProperty Name="MUONTRA">
+        <ScalarProperty Name="MaMuonTra" ColumnName="MaMuonTra" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

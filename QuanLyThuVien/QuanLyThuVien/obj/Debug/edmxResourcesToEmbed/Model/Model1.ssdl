@@ -7,7 +7,6 @@
     </Key>
     <Property Name="MaMuonTra" Type="char" MaxLength="15" Nullable="false" />
     <Property Name="MaDonViSach" Type="char" MaxLength="15" Nullable="false" />
-    <Property Name="GhiChu" Type="ntext" />
   </EntityType>
   <EntityType Name="DAUSACH">
     <Key>
@@ -55,6 +54,7 @@
     </Key>
     <Property Name="MaDonViSach" Type="char" MaxLength="15" Nullable="false" />
     <Property Name="MaSach" Type="char" MaxLength="15" />
+    <Property Name="TrangThai" Type="bit" />
   </EntityType>
   <EntityType Name="SINHVIEN">
     <Key>
@@ -91,6 +91,30 @@
     <Property Name="NgayGiaHan" Type="date" />
     <Property Name="NgayHetHan" Type="date" />
   </EntityType>
+  <Association Name="ctmt_MaDonViSach_fk">
+    <End Role="SACH" Type="Self.SACH" Multiplicity="1" />
+    <End Role="CHITIETMUONTRA" Type="Self.CHITIETMUONTRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SACH">
+        <PropertyRef Name="MaDonViSach" />
+      </Principal>
+      <Dependent Role="CHITIETMUONTRA">
+        <PropertyRef Name="MaDonViSach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ctmt_MaMuonTra_fk">
+    <End Role="MUONTRA" Type="Self.MUONTRA" Multiplicity="1" />
+    <End Role="CHITIETMUONTRA" Type="Self.CHITIETMUONTRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MUONTRA">
+        <PropertyRef Name="MaMuonTra" />
+      </Principal>
+      <Dependent Role="CHITIETMUONTRA">
+        <PropertyRef Name="MaMuonTra" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="ds_MaNhaXuatBan_fk">
     <End Role="NHAXUATBAN" Type="Self.NHAXUATBAN" Multiplicity="0..1" />
     <End Role="DAUSACH" Type="Self.DAUSACH" Multiplicity="*" />
@@ -136,30 +160,6 @@
       </Principal>
       <Dependent Role="DAUSACH">
         <PropertyRef Name="MaTheLoai" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__CHITIETMU__MaDon__4F7CD00D">
-    <End Role="SACH" Type="Self.SACH" Multiplicity="1" />
-    <End Role="CHITIETMUONTRA" Type="Self.CHITIETMUONTRA" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="SACH">
-        <PropertyRef Name="MaDonViSach" />
-      </Principal>
-      <Dependent Role="CHITIETMUONTRA">
-        <PropertyRef Name="MaDonViSach" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__CHITIETMU__MaMuo__4E88ABD4">
-    <End Role="MUONTRA" Type="Self.MUONTRA" Multiplicity="1" />
-    <End Role="CHITIETMUONTRA" Type="Self.CHITIETMUONTRA" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="MUONTRA">
-        <PropertyRef Name="MaMuonTra" />
-      </Principal>
-      <Dependent Role="CHITIETMUONTRA">
-        <PropertyRef Name="MaMuonTra" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -210,6 +210,14 @@
     <EntitySet Name="TACGIA" EntityType="Self.TACGIA" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="THELOAI" EntityType="Self.THELOAI" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="THETHUVIEN" EntityType="Self.THETHUVIEN" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="ctmt_MaDonViSach_fk" Association="Self.ctmt_MaDonViSach_fk">
+      <End Role="SACH" EntitySet="SACH" />
+      <End Role="CHITIETMUONTRA" EntitySet="CHITIETMUONTRA" />
+    </AssociationSet>
+    <AssociationSet Name="ctmt_MaMuonTra_fk" Association="Self.ctmt_MaMuonTra_fk">
+      <End Role="MUONTRA" EntitySet="MUONTRA" />
+      <End Role="CHITIETMUONTRA" EntitySet="CHITIETMUONTRA" />
+    </AssociationSet>
     <AssociationSet Name="ds_MaNhaXuatBan_fk" Association="Self.ds_MaNhaXuatBan_fk">
       <End Role="NHAXUATBAN" EntitySet="NHAXUATBAN" />
       <End Role="DAUSACH" EntitySet="DAUSACH" />
@@ -225,14 +233,6 @@
     <AssociationSet Name="ds_MaTheLoai_fk" Association="Self.ds_MaTheLoai_fk">
       <End Role="THELOAI" EntitySet="THELOAI" />
       <End Role="DAUSACH" EntitySet="DAUSACH" />
-    </AssociationSet>
-    <AssociationSet Name="FK__CHITIETMU__MaDon__4F7CD00D" Association="Self.FK__CHITIETMU__MaDon__4F7CD00D">
-      <End Role="SACH" EntitySet="SACH" />
-      <End Role="CHITIETMUONTRA" EntitySet="CHITIETMUONTRA" />
-    </AssociationSet>
-    <AssociationSet Name="FK__CHITIETMU__MaMuo__4E88ABD4" Association="Self.FK__CHITIETMU__MaMuo__4E88ABD4">
-      <End Role="MUONTRA" EntitySet="MUONTRA" />
-      <End Role="CHITIETMUONTRA" EntitySet="CHITIETMUONTRA" />
     </AssociationSet>
     <AssociationSet Name="mt_MaNhanVien_fk" Association="Self.mt_MaNhanVien_fk">
       <End Role="NHANVIEN" EntitySet="NHANVIEN" />
