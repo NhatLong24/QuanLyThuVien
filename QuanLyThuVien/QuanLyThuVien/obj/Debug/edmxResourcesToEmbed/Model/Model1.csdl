@@ -1,16 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="TTN_QuanLyThuVienModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="CHITIETMUONTRA">
-    <Key>
-      <PropertyRef Name="MaMuonTra" />
-      <PropertyRef Name="MaDonViSach" />
-    </Key>
-    <Property Name="MaMuonTra" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="MaDonViSach" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="SACH" Relationship="Self.FK__CHITIETMU__MaDon__4F7CD00D" FromRole="CHITIETMUONTRA" ToRole="SACH" />
-    <NavigationProperty Name="MUONTRA" Relationship="Self.FK__CHITIETMU__MaMuo__4E88ABD4" FromRole="CHITIETMUONTRA" ToRole="MUONTRA" />
-  </EntityType>
   <EntityType Name="DAUSACH">
     <Key>
       <PropertyRef Name="MaSach" />
@@ -36,9 +25,9 @@
     <Property Name="NgayMuon" Type="DateTime" Precision="0" />
     <Property Name="NgayTra" Type="DateTime" Precision="0" />
     <Property Name="Ghichu" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="CHITIETMUONTRAs" Relationship="Self.FK__CHITIETMU__MaMuo__4E88ABD4" FromRole="MUONTRA" ToRole="CHITIETMUONTRA" />
     <NavigationProperty Name="NHANVIEN" Relationship="Self.mt_MaNhanVien_fk" FromRole="MUONTRA" ToRole="NHANVIEN" />
     <NavigationProperty Name="THETHUVIEN" Relationship="Self.mt_MaThe_fk" FromRole="MUONTRA" ToRole="THETHUVIEN" />
+    <NavigationProperty Name="SACHes" Relationship="Self.CHITIETMUONTRA" FromRole="MUONTRA" ToRole="SACH" />
   </EntityType>
   <EntityType Name="NHANVIEN">
     <Key>
@@ -66,8 +55,9 @@
     </Key>
     <Property Name="MaDonViSach" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="MaSach" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
-    <NavigationProperty Name="CHITIETMUONTRAs" Relationship="Self.FK__CHITIETMU__MaDon__4F7CD00D" FromRole="SACH" ToRole="CHITIETMUONTRA" />
+    <Property Name="TrangThai" Type="Boolean" />
     <NavigationProperty Name="DAUSACH" Relationship="Self.ds_MaSach_fk" FromRole="SACH" ToRole="DAUSACH" />
+    <NavigationProperty Name="MUONTRAs" Relationship="Self.CHITIETMUONTRA" FromRole="SACH" ToRole="MUONTRA" />
   </EntityType>
   <EntityType Name="SINHVIEN">
     <Key>
@@ -109,30 +99,6 @@
     <NavigationProperty Name="MUONTRAs" Relationship="Self.mt_MaThe_fk" FromRole="THETHUVIEN" ToRole="MUONTRA" />
     <NavigationProperty Name="SINHVIEN" Relationship="Self.ttv_MaSinhVien_fk" FromRole="THETHUVIEN" ToRole="SINHVIEN" />
   </EntityType>
-  <Association Name="FK__CHITIETMU__MaDon__4F7CD00D">
-    <End Role="SACH" Type="Self.SACH" Multiplicity="1" />
-    <End Role="CHITIETMUONTRA" Type="Self.CHITIETMUONTRA" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="SACH">
-        <PropertyRef Name="MaDonViSach" />
-      </Principal>
-      <Dependent Role="CHITIETMUONTRA">
-        <PropertyRef Name="MaDonViSach" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__CHITIETMU__MaMuo__4E88ABD4">
-    <End Role="MUONTRA" Type="Self.MUONTRA" Multiplicity="1" />
-    <End Role="CHITIETMUONTRA" Type="Self.CHITIETMUONTRA" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="MUONTRA">
-        <PropertyRef Name="MaMuonTra" />
-      </Principal>
-      <Dependent Role="CHITIETMUONTRA">
-        <PropertyRef Name="MaMuonTra" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="ds_MaNhaXuatBan_fk">
     <End Role="NHAXUATBAN" Type="Self.NHAXUATBAN" Multiplicity="0..1" />
     <End Role="DAUSACH" Type="Self.DAUSACH" Multiplicity="*" />
@@ -217,8 +183,11 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="TTN_QuanLyThuVienEntities1" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="CHITIETMUONTRAs" EntityType="Self.CHITIETMUONTRA" />
+  <Association Name="CHITIETMUONTRA">
+    <End Role="SACH" Type="Self.SACH" Multiplicity="*" />
+    <End Role="MUONTRA" Type="Self.MUONTRA" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="TTN_QuanLyThuVienEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="DAUSACHes" EntityType="Self.DAUSACH" />
     <EntitySet Name="MUONTRAs" EntityType="Self.MUONTRA" />
     <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
@@ -228,14 +197,6 @@
     <EntitySet Name="TACGIAs" EntityType="Self.TACGIA" />
     <EntitySet Name="THELOAIs" EntityType="Self.THELOAI" />
     <EntitySet Name="THETHUVIENs" EntityType="Self.THETHUVIEN" />
-    <AssociationSet Name="FK__CHITIETMU__MaDon__4F7CD00D" Association="Self.FK__CHITIETMU__MaDon__4F7CD00D">
-      <End Role="SACH" EntitySet="SACHes" />
-      <End Role="CHITIETMUONTRA" EntitySet="CHITIETMUONTRAs" />
-    </AssociationSet>
-    <AssociationSet Name="FK__CHITIETMU__MaMuo__4E88ABD4" Association="Self.FK__CHITIETMU__MaMuo__4E88ABD4">
-      <End Role="MUONTRA" EntitySet="MUONTRAs" />
-      <End Role="CHITIETMUONTRA" EntitySet="CHITIETMUONTRAs" />
-    </AssociationSet>
     <AssociationSet Name="ds_MaNhaXuatBan_fk" Association="Self.ds_MaNhaXuatBan_fk">
       <End Role="NHAXUATBAN" EntitySet="NHAXUATBANs" />
       <End Role="DAUSACH" EntitySet="DAUSACHes" />
@@ -263,6 +224,10 @@
     <AssociationSet Name="ttv_MaSinhVien_fk" Association="Self.ttv_MaSinhVien_fk">
       <End Role="SINHVIEN" EntitySet="SINHVIENs" />
       <End Role="THETHUVIEN" EntitySet="THETHUVIENs" />
+    </AssociationSet>
+    <AssociationSet Name="CHITIETMUONTRA" Association="Self.CHITIETMUONTRA">
+      <End Role="SACH" EntitySet="SACHes" />
+      <End Role="MUONTRA" EntitySet="MUONTRAs" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

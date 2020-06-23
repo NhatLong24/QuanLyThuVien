@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyThuVien.View;
+using QuanLyThuVien.Controller;
 
 namespace QuanLyThuVien
 {
@@ -17,7 +18,7 @@ namespace QuanLyThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new  FormDocGia());
+            Application.Run(new  FormMainMenu());
         }
     }
 }

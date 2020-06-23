@@ -127,5 +127,12 @@ namespace QuanLyThuVien.View
                 }
             }
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            FormThemDocGia ftdg = new FormThemDocGia();
+            this.Hide();
+            ftdg.ShowDialog();
+        }
     }
 }
