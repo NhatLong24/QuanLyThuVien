@@ -227,6 +227,7 @@
             this.txtTimKiem.TabIndex = 3;
             this.txtTimKiem.Text = "Tên đọc giả cần tìm kiếm...";
             this.txtTimKiem.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTimKiem_MouseClick);
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             this.txtTimKiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTimKiem_KeyPress);
             // 
             // btnXoa

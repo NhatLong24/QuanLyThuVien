@@ -134,5 +134,10 @@ namespace QuanLyThuVien.View
             this.Hide();
             ftdg.ShowDialog();
         }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -53,3 +53,25 @@ C:\Thực tập nhóm\TTN Bài 3\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\D
 C:\Thực tập nhóm\TTN Bài 3\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
 C:\Thực tập nhóm\TTN Bài 3\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormQLTTMuonTra.resources
 C:\Thực tập nhóm\TTN Bài 3\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.TimkiemttmuonTra.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.dll
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.dll
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.xml
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.xml
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojAssemblyReference.cache
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Controller.FormMainMenu.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormDangKy.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormDangNhap.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormDauSach.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormDocGia.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormQLTTMuonTra.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormThemDocGia.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.TimkiemttmuonTra.resources
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CopyComplete
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\BTL-k2n3\TTNhom\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
