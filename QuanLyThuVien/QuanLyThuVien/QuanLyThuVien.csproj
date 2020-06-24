@@ -127,11 +127,23 @@
     <Compile Include="View\FormDocGia.Designer.cs">
       <DependentUpon>FormDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormQLTTMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormQLTTMuonTra.Designer.cs">
+      <DependentUpon>FormQLTTMuonTra.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormThemDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormThemDocGia.Designer.cs">
       <DependentUpon>FormThemDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TimkiemttmuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TimkiemttmuonTra.Designer.cs">
+      <DependentUpon>TimkiemttmuonTra.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Controller\FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
@@ -155,8 +167,14 @@
     <EmbeddedResource Include="View\FormDocGia.resx">
       <DependentUpon>FormDocGia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormQLTTMuonTra.resx">
+      <DependentUpon>FormQLTTMuonTra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormThemDocGia.resx">
       <DependentUpon>FormThemDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TimkiemttmuonTra.resx">
+      <DependentUpon>TimkiemttmuonTra.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
