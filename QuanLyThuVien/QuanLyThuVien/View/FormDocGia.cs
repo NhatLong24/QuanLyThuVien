@@ -13,7 +13,7 @@ namespace QuanLyThuVien.View
 {
     public partial class FormDocGia : Form
     {
-        TTN_QuanLyThuVienEntities db = new TTN_QuanLyThuVienEntities();
+        TTN_QuanLyThuVienEntities1 db = new TTN_QuanLyThuVienEntities1();
         private string maTheTV;
         private string maSV;
         public FormDocGia()

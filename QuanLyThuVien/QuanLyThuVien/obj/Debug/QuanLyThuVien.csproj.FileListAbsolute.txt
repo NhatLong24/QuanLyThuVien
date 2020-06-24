@@ -30,3 +30,5 @@ E:\TTN\Bai4_QLTV\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFrame
 E:\TTN\Bai4_QLTV\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Controller.FormMainMenu.resources
 E:\TTN\Bai4_QLTV\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CopyComplete
 E:\TTN\Bai4_QLTV\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormThemDocGia.resources
+E:\TTN\Bai4_QLTV\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormDangKy.resources
+E:\TTN\Bai4_QLTV\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.View.FormDangNhap.resources

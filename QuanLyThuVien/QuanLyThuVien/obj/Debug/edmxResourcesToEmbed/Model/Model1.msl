@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="TTN_QuanLyThuVienModelStoreContainer" CdmEntityContainer="TTN_QuanLyThuVienEntities">
+  <EntityContainerMapping StorageEntityContainer="TTN_QuanLyThuVienModelStoreContainer" CdmEntityContainer="TTN_QuanLyThuVienEntities1">
     <EntitySetMapping Name="DAUSACHes">
       <EntityTypeMapping TypeName="TTN_QuanLyThuVienModel.DAUSACH">
         <MappingFragment StoreEntitySet="DAUSACH">
@@ -22,6 +22,14 @@
           <ScalarProperty Name="NgayMuon" ColumnName="NgayMuon" />
           <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
           <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NguoiDungs">
+      <EntityTypeMapping TypeName="TTN_QuanLyThuVienModel.NguoiDung">
+        <MappingFragment StoreEntitySet="NguoiDung">
+          <ScalarProperty Name="TenUser" ColumnName="TenUser" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

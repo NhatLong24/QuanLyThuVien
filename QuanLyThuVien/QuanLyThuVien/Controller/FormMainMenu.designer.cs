@@ -115,31 +115,31 @@
             this.xoaToolStripMenuItem,
             this.timKiemToolStripMenuItem});
             this.quanLySachToolStripMenuItem.Name = "quanLySachToolStripMenuItem";
-            this.quanLySachToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.quanLySachToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.quanLySachToolStripMenuItem.Text = "Quan ly sach";
             // 
             // themToolStripMenuItem
             // 
             this.themToolStripMenuItem.Name = "themToolStripMenuItem";
-            this.themToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.themToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.themToolStripMenuItem.Text = "Them";
             // 
             // suaToolStripMenuItem
             // 
             this.suaToolStripMenuItem.Name = "suaToolStripMenuItem";
-            this.suaToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.suaToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.suaToolStripMenuItem.Text = "Sua";
             // 
             // xoaToolStripMenuItem
             // 
             this.xoaToolStripMenuItem.Name = "xoaToolStripMenuItem";
-            this.xoaToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.xoaToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.xoaToolStripMenuItem.Text = "Xoa";
             // 
             // timKiemToolStripMenuItem
             // 
             this.timKiemToolStripMenuItem.Name = "timKiemToolStripMenuItem";
-            this.timKiemToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.timKiemToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.timKiemToolStripMenuItem.Text = "Tim kiem";
             // 
             // quanLyDocGiaToolStripMenuItem
@@ -150,32 +150,32 @@
             this.xoaToolStripMenuItem1,
             this.timKiemToolStripMenuItem1});
             this.quanLyDocGiaToolStripMenuItem.Name = "quanLyDocGiaToolStripMenuItem";
-            this.quanLyDocGiaToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.quanLyDocGiaToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.quanLyDocGiaToolStripMenuItem.Text = "Quan ly doc gia";
             // 
             // themToolStripMenuItem1
             // 
             this.themToolStripMenuItem1.Name = "themToolStripMenuItem1";
-            this.themToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.themToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.themToolStripMenuItem1.Text = "Them";
             this.themToolStripMenuItem1.Click += new System.EventHandler(this.themToolStripMenuItem1_Click);
             // 
             // suaToolStripMenuItem1
             // 
             this.suaToolStripMenuItem1.Name = "suaToolStripMenuItem1";
-            this.suaToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.suaToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.suaToolStripMenuItem1.Text = "Sua ";
             // 
             // xoaToolStripMenuItem1
             // 
             this.xoaToolStripMenuItem1.Name = "xoaToolStripMenuItem1";
-            this.xoaToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.xoaToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.xoaToolStripMenuItem1.Text = "Xoa";
             // 
             // timKiemToolStripMenuItem1
             // 
             this.timKiemToolStripMenuItem1.Name = "timKiemToolStripMenuItem1";
-            this.timKiemToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.timKiemToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.timKiemToolStripMenuItem1.Text = "Tim kiem";
             // 
             // quanLyMuonTraToolStripMenuItem
@@ -186,37 +186,37 @@
             this.xoaToolStripMenuItem2,
             this.timKiemToolStripMenuItem2});
             this.quanLyMuonTraToolStripMenuItem.Name = "quanLyMuonTraToolStripMenuItem";
-            this.quanLyMuonTraToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.quanLyMuonTraToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.quanLyMuonTraToolStripMenuItem.Text = "Quan ly muon tra";
             // 
             // themToolStripMenuItem2
             // 
             this.themToolStripMenuItem2.Name = "themToolStripMenuItem2";
-            this.themToolStripMenuItem2.Size = new System.Drawing.Size(216, 26);
+            this.themToolStripMenuItem2.Size = new System.Drawing.Size(145, 26);
             this.themToolStripMenuItem2.Text = "Them";
             // 
             // suaToolStripMenuItem2
             // 
             this.suaToolStripMenuItem2.Name = "suaToolStripMenuItem2";
-            this.suaToolStripMenuItem2.Size = new System.Drawing.Size(216, 26);
+            this.suaToolStripMenuItem2.Size = new System.Drawing.Size(145, 26);
             this.suaToolStripMenuItem2.Text = "Sua";
             // 
             // xoaToolStripMenuItem2
             // 
             this.xoaToolStripMenuItem2.Name = "xoaToolStripMenuItem2";
-            this.xoaToolStripMenuItem2.Size = new System.Drawing.Size(216, 26);
+            this.xoaToolStripMenuItem2.Size = new System.Drawing.Size(145, 26);
             this.xoaToolStripMenuItem2.Text = "Xoa";
             // 
             // timKiemToolStripMenuItem2
             // 
             this.timKiemToolStripMenuItem2.Name = "timKiemToolStripMenuItem2";
-            this.timKiemToolStripMenuItem2.Size = new System.Drawing.Size(216, 26);
+            this.timKiemToolStripMenuItem2.Size = new System.Drawing.Size(145, 26);
             this.timKiemToolStripMenuItem2.Text = "Tim kiem";
             // 
             // huongDanSuDungToolStripMenuItem
             // 
             this.huongDanSuDungToolStripMenuItem.Name = "huongDanSuDungToolStripMenuItem";
-            this.huongDanSuDungToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.huongDanSuDungToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.huongDanSuDungToolStripMenuItem.Text = "Huong dan su dung";
             // 
             // thoatToolStripMenuItem
@@ -298,7 +298,6 @@
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";
-            this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

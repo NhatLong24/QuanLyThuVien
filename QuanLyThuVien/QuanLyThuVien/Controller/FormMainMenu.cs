@@ -18,19 +18,9 @@ namespace QuanLyThuVien.Controller
             InitializeComponent();
         }
 
-        private void FormMainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void thoatToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void buttonThanhToan_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void themToolStripMenuItem1_Click(object sender, EventArgs e)

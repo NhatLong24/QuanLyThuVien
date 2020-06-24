@@ -29,6 +29,13 @@
     <NavigationProperty Name="THETHUVIEN" Relationship="Self.mt_MaThe_fk" FromRole="MUONTRA" ToRole="THETHUVIEN" />
     <NavigationProperty Name="SACHes" Relationship="Self.CHITIETMUONTRA" FromRole="MUONTRA" ToRole="SACH" />
   </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="TenUser" />
+    </Key>
+    <Property Name="TenUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+  </EntityType>
   <EntityType Name="NHANVIEN">
     <Key>
       <PropertyRef Name="MaNhanVien" />
@@ -187,9 +194,10 @@
     <End Role="SACH" Type="Self.SACH" Multiplicity="*" />
     <End Role="MUONTRA" Type="Self.MUONTRA" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="TTN_QuanLyThuVienEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="TTN_QuanLyThuVienEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="DAUSACHes" EntityType="Self.DAUSACH" />
     <EntitySet Name="MUONTRAs" EntityType="Self.MUONTRA" />
+    <EntitySet Name="NguoiDungs" EntityType="Self.NguoiDung" />
     <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
     <EntitySet Name="NHAXUATBANs" EntityType="Self.NHAXUATBAN" />
     <EntitySet Name="SACHes" EntityType="Self.SACH" />

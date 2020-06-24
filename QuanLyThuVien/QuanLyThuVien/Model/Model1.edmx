@@ -35,6 +35,13 @@
           <Property Name="NgayTra" Type="date" />
           <Property Name="Ghichu" Type="nvarchar" MaxLength="200" />
         </EntityType>
+        <EntityType Name="NguoiDung">
+          <Key>
+            <PropertyRef Name="TenUser" />
+          </Key>
+          <Property Name="TenUser" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MatKhau" Type="char" MaxLength="6" />
+        </EntityType>
         <EntityType Name="NHANVIEN">
           <Key>
             <PropertyRef Name="MaNhanVien" />
@@ -208,6 +215,7 @@
           <EntitySet Name="CHITIETMUONTRA" EntityType="Self.CHITIETMUONTRA" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DAUSACH" EntityType="Self.DAUSACH" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MUONTRA" EntityType="Self.MUONTRA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NHAXUATBAN" EntityType="Self.NHAXUATBAN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SACH" EntityType="Self.SACH" Schema="dbo" store:Type="Tables" />
@@ -285,6 +293,13 @@
           <NavigationProperty Name="NHANVIEN" Relationship="Self.mt_MaNhanVien_fk" FromRole="MUONTRA" ToRole="NHANVIEN" />
           <NavigationProperty Name="THETHUVIEN" Relationship="Self.mt_MaThe_fk" FromRole="MUONTRA" ToRole="THETHUVIEN" />
           <NavigationProperty Name="SACHes" Relationship="Self.CHITIETMUONTRA" FromRole="MUONTRA" ToRole="SACH" />
+        </EntityType>
+        <EntityType Name="NguoiDung">
+          <Key>
+            <PropertyRef Name="TenUser" />
+          </Key>
+          <Property Name="TenUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MatKhau" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="NHANVIEN">
           <Key>
@@ -444,9 +459,10 @@
           <End Role="SACH" Type="Self.SACH" Multiplicity="*" />
           <End Role="MUONTRA" Type="Self.MUONTRA" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="TTN_QuanLyThuVienEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="TTN_QuanLyThuVienEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="DAUSACHes" EntityType="Self.DAUSACH" />
           <EntitySet Name="MUONTRAs" EntityType="Self.MUONTRA" />
+          <EntitySet Name="NguoiDungs" EntityType="Self.NguoiDung" />
           <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
           <EntitySet Name="NHAXUATBANs" EntityType="Self.NHAXUATBAN" />
           <EntitySet Name="SACHes" EntityType="Self.SACH" />
@@ -492,7 +508,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="TTN_QuanLyThuVienModelStoreContainer" CdmEntityContainer="TTN_QuanLyThuVienEntities">
+        <EntityContainerMapping StorageEntityContainer="TTN_QuanLyThuVienModelStoreContainer" CdmEntityContainer="TTN_QuanLyThuVienEntities1">
           <EntitySetMapping Name="DAUSACHes">
             <EntityTypeMapping TypeName="TTN_QuanLyThuVienModel.DAUSACH">
               <MappingFragment StoreEntitySet="DAUSACH">
@@ -514,6 +530,14 @@
                 <ScalarProperty Name="NgayMuon" ColumnName="NgayMuon" />
                 <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
                 <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NguoiDungs">
+            <EntityTypeMapping TypeName="TTN_QuanLyThuVienModel.NguoiDung">
+              <MappingFragment StoreEntitySet="NguoiDung">
+                <ScalarProperty Name="TenUser" ColumnName="TenUser" />
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

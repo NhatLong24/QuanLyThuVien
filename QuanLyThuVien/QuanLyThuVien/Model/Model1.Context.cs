@@ -13,10 +13,10 @@ namespace QuanLyThuVien.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TTN_QuanLyThuVienEntities : DbContext
+    public partial class TTN_QuanLyThuVienEntities1 : DbContext
     {
-        public TTN_QuanLyThuVienEntities()
-            : base("name=TTN_QuanLyThuVienEntities")
+        public TTN_QuanLyThuVienEntities1()
+            : base("name=TTN_QuanLyThuVienEntities1")
         {
         }
     
@@ -27,6 +27,7 @@ namespace QuanLyThuVien.Model
     
         public virtual DbSet<DAUSACH> DAUSACHes { get; set; }
         public virtual DbSet<MUONTRA> MUONTRAs { get; set; }
+        public virtual DbSet<NguoiDung> NguoiDungs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
         public virtual DbSet<NHAXUATBAN> NHAXUATBANs { get; set; }
         public virtual DbSet<SACH> SACHes { get; set; }
